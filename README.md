@@ -1,5 +1,18 @@
 # MacMisc
 
+## Bash Scripts
+
+##TODO:
+<table>
+<colgroup>
+<col style="text-align:center;"/>
+<col style="text-align:left;"/>
+</colgroup>
+<thead>
+</thead>
+<tbody>
+</tbody>
+</table>
 
 ## KeyBindings
 
@@ -29,7 +42,7 @@
 	<td style="text-align:left;">Select Current Word</td>
 </tr>
 <tr>
-	<td style="text-align:center;">^+X</td>
+	<td style="text-align:center;">^X</td>
 	<td style="text-align:left;">Cut Current Paragraph</td>
 </tr>
 <tr>
