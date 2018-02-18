@@ -1,0 +1,9 @@
+{
+    "@l" = selectParagraph:;
+    "@d" = selectWord:;
+    "^x" = (selectParagraph:, cut:);
+    // move line up
+    "^@\UF700" = (selectParagraph:, setMark:, deleteToMark:, moveLeft:, moveToBeginningOfParagraph:, yank:, moveLeft:, selectToMark:, moveLeft:);
+    // move line down
+    "^@\UF701" = (selectParagraph:, setMark:, deleteToMark:, moveToEndOfParagraph:, moveRight:, setMark:, yank:, moveLeft:, selectToMark:);
+}
