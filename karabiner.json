@@ -1,7 +1,7 @@
 {
     "global": {
         "check_for_updates_on_startup": true,
-        "show_in_menu_bar": false,
+        "show_in_menu_bar": true,
         "show_profile_name_in_menu_bar": false
     },
     "profiles": [
@@ -53,6 +53,28 @@
                                 "to": [
                                     {
                                         "key_code": "grave_accent_and_tilde",
+                                        "modifiers": {
+                                            "optional": "left_shift"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "manipulators": [
+                            {
+                                "description": "Change ? to left_shift + /, / to fn + / (Anne Pro)",
+                                "from": {
+                                    "key_code": "up_arrow",
+                                    "modifiers": {
+                                        "mandatory": "left_shift"
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "slash",
                                         "modifiers": {
                                             "optional": "left_shift"
                                         }
@@ -229,18 +251,9 @@
                     }
                 }
             ],
-            "name": "Default profile",
+            "name": "Jason",
             "selected": true,
-            "simple_modifications": [
-                {
-                    "from": {
-                        "key_code": "caps_lock"
-                    },
-                    "to": {
-                        "key_code": "left_control"
-                    }
-                }
-            ],
+            "simple_modifications": [],
             "virtual_hid_keyboard": {
                 "caps_lock_delay_milliseconds": 0,
                 "keyboard_type": "ansi"
