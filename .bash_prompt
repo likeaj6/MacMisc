@@ -12,10 +12,10 @@ if tput setaf 1 &> /dev/null; then
   tput sgr0
   if [[ $(tput colors) -ge 256 ]] 2>/dev/null; then
     # Changed these colors to fit Solarized theme
-    MAGENTA=$(tput setaf 125)
-    ORANGE=$(tput setaf 166)
-    GREEN=$(tput setaf 64)
-    PURPLE=$(tput setaf 61)
+    MAGENTA=$(tput setaf 167)
+    ORANGE=$(tput setaf 210)
+    GREEN=$(tput setaf 194)
+    PURPLE=$(tput setaf 195)
     WHITE=$(tput setaf 244)
   else
     MAGENTA=$(tput setaf 5)

@@ -1,6 +1,5 @@
 export PS1="___________________    | \w @ \h (\u) \n| => "
 export PS2="| => "
-
 export PATH=~/.local/bin:$PATH
 export PATH="$PATH:/usr/local/bin/"
 export PATH="/usr/local/git/bin:/sw/bin/:/usr/local/bin:/usr/local/:/usr/local/sbin:/usr/local/mysql/bin:$PATH"
@@ -8,6 +7,12 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PATH=~/dev/flutter/bin:$PATH
 export PATH="$PATH:$HOME/bin"
 export GIT_EDITOR=vim
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH="$PATH:$(yarn global bin)"
 
 #   Set Default Editor (change 'Nano' to the editor of your choice)
 #   ------------------------------------------------------------
@@ -30,6 +35,7 @@ export GIT_EDITOR=vim
 #   2. MAKE TERMINAL BETTER
 #   -----------------------------
 
+alias python2="/usr/bin/python"
 alias cp='cp -iv'                           # Preferred 'cp' implementation
 alias mv='mv -iv'                           # Preferred 'mv' implementation
 alias mkdir='mkdir -pv'                     # Preferred 'mkdir' implementation
@@ -55,6 +61,8 @@ alias sshMilk6006='ssh -L 7000:127.0.0.1:6006 -l -Y jjin3@vanilla.cs.swarthmore.
 alias sshMilk6006='ssh -L 7000:127.0.0.1:6006 -l -Y jjin3@milk.cs.swarthmore.edu'
 sshCS() { ssh -L "$3:127.0.0.1:$2" -l -Y "jjin3@$1.cs.swarthmore.edu"; }
 killNodeOnPort() { kill -9 $(lsof -i :$1 | awk '$1 == "node" { print $2 }'); }
+alias mongod='mongod --dbpath ~/data/db'
+alias buildReactAndroid='react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.bundle --assets-dest android/app/src/main/res/'
 
 mcd () { mkdir -p "$1" && cd "$1"; }        # mcd:          Makes new Dir and jumps inside
 trash () { command mv "$@" ~/.Trash ; }     # trash:        Moves a file to the MacOS trash
